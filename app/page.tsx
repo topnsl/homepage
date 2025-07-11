@@ -26,15 +26,19 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-50 to-blue-100 py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <Badge className="mb-4 bg-red-100 text-red-800 hover:bg-red-100">24시간 긴급출동 서비스</Badge>
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+      <section
+        className="relative bg-cover bg-center py-20 px-6 text-white"
+        style={{ backgroundImage: "url('/main-background.png')" }}
+      >
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 max-w-6xl mx-auto text-center">
+          <Badge className="mb-4 bg-white/20 text-white hover:bg-white/30 border-none">24시간 긴급출동 서비스</Badge>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6">
             정확한 누수탐지로
             <br />
-            <span className="text-blue-600">소중한 재산을 보호하세요</span>
+            <span className="text-blue-300">소중한 재산을 보호하세요</span>
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
             최첨단 장비와 20년 경력의 전문가가 신속하고 정확한 누수탐지 서비스를 제공합니다. 작은 누수부터 대형 누수까지
             완벽하게 해결해드립니다.
           </p>
@@ -43,7 +47,11 @@ export default function HomePage() {
               <Phone className="mr-2 h-5 w-5" />
               지금 바로 상담받기
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 bg-transparent">
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-lg px-8 py-3 border-white text-white hover:bg-white/10 hover:text-white"
+            >
               서비스 자세히 보기
             </Button>
           </div>
